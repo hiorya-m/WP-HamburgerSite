@@ -1,11 +1,7 @@
-@use "../global";
+@use "../global" as g;
 
 .l-header {
-    background-color: global.$header-color;
-    @include global.breakpoint(tablet) {
-        background-color: #000;
-    }
-    @include global.breakpoint(pc) {
-        background-color: #FFF;
-    }
+    background-color: g.$main-color;
+    grid-row: 1;
+    grid-column: 1;
 }

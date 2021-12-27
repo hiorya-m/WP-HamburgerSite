@@ -1,0 +1,8 @@
+@use "../global" as g;
+
+#l-container {
+    display: grid;
+    grid-template-rows: 217px 1fr 150px;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}

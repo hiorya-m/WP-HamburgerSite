@@ -1,6 +1,6 @@
 @use "./variables";
 
-@mixin breakpoint($point) {
+@mixin mq($point) {
     @if $point == tablet {
         @media (min-width: 768px) {
             @content;
