@@ -1,7 +1,7 @@
 @use "./variables";
 
 @mixin mq($point) {
-    @if $point == tablet {
+    @if $point == tab {
         @media (min-width: 768px) {
             @content;
         }

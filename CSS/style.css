@@ -322,6 +322,31 @@ progress {
   cursor: default;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul, oi {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 #l-container {
   display: grid;
   grid-template-rows: 217px 1fr 150px;
