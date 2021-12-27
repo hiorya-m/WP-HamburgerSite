@@ -1,0 +1,15 @@
+@use "./variables";
+
+@mixin breakpoint($point) {
+    @if $point == tablet {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+
+    @if $point == pc {
+        @media (min-width: 1024px) {
+            @content;
+        }
+    }
+}
