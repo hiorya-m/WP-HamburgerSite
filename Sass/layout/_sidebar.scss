@@ -1,1 +1,13 @@
 @use "../global" as g;
+
+.l-sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .l-sidebar__title {
+    margin-top: 14px;
+    margin-right: 16px;
+    width: 51px;
+  }

@@ -13,75 +13,76 @@
 
         <header class="l-header">
 
-            <h1 class="p-header__logo">
+            <h1 class="l-header__logo">
                 <img src="./img/header_logo.png">
             </h1>
 
-            <div class="p-header__search">
-                <form method="post">
-                    <img src="./img/header_icon_search.svg">
-                    <input type="search" name="seatch">
-                    <input type="submit" name="submit" value="検索">
-                </form>
-            </div>
-            
-            <aside class="l-aside">
-                <h2 class="l-aside__title">Menu</h2>
-                <ul>
-                    <li></li>
-                </ul>
-            </aside>
+            <form class="l-header__form p-form" method="post">
+                <div class="p-form__text">
+                    <input type="search" name="search">
+                    <!-- <img class="p-search__image" src="./img/header_icon_search.svg"> -->
+                </div>
+                <button class="p-form__btn" type="submit">検索</button>
+            </form>
 
         </header>
+        
+        <main class=" l-main">
 
-        <main class="l-main">
+                    <article class="p-content">
+                        <img src="./img/index/pagetop.png">
+                        <h2>ダミーサイト</h2>
+                    </article>
 
-            <article class="p-content">
-                <img src="./img/index/pagetop.png">
-                <h2>ダミーサイト</h2>
-            </article>
+                    <div class="p-branch-menu">
+                        <ul class="p-branch-menu__list">
+                            <li>
+                                <img src="./img/index/main_bg01.png">
+                                <h2>Take Out</h2>
+                                <dl>
+                                    <dt>小見出しが入ります。</dt>
+                                    <dd>テキストが入ります。</dd>
+                                </dl>
+                            </li>
+                            <li>
+                                <img src="./img/index/main_bg02.png">
+                                <h2>Eat In</h2>
+                                <dl>
+                                    <dt>小見出しが入ります。</dt>
+                                    <dl>テキストが入ります</dl>
+                                </dl>
+                            </li>
+                        </ul>
+                    </div>
 
-            <div class="p-branch-menu">
-                <ul class="p-branch-menu__list">
-                    <li>
-                        <img src="./img/index/main_bg01.png">
-                        <h2>Take Out</h2>
-                        <dl>
-                            <dt>小見出しが入ります。</dt>
-                            <dd>テキストが入ります。</dd>
-                        </dl>
-                    </li>
-                    <li>
-                        <img src="./img/index/main_bg02.png">
-                        <h2>Eat In</h2>
-                        <dl>
-                            <dt>小見出しが入ります。</dt>
-                            <dl>テキストが入ります</dl>
-                        </dl>
-                    </li>
-                </ul>
-            </div>
+                    <section class="p-acsess">
+                        <h2>見出しが入ります</h2>
+                        <p>テキストが入ります。</p>
 
-            <section class="p-acsess">
-                <h2>見出しが入ります</h2>
-                <p>テキストが入ります。</p>
+                        <div class="p-map"></div>
+                    </section>
 
-                <div class="p-map"></div>
-            </section>
+                    </main>
 
-        </main>
+                    <aside class="l-sidebar">
+                        <h2 class="l-sidebar__title">
+                            <img src="./img/sidebar_logo.png">
+                        </h2>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </aside>
 
-
-        <footer class="l-footer">
-            <img src="./img/footer_bg.png">
-            <ul>
-                <li>ショップ情報</li>
-                <li>ヒストリー</li>
-            </ul>
-            <address>
-                <p>Copyright:RaisTech</p>
-            </address>
-        </footer>
+                    <footer class="l-footer">
+                        <img src="./img/footer_bg.png">
+                        <ul>
+                            <li>ショップ情報</li>
+                            <li>ヒストリー</li>
+                        </ul>
+                        <address>
+                            <p>Copyright:RaisTech</p>
+                        </address>
+                    </footer>
 
     </div>
 
