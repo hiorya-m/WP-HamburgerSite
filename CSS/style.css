@@ -370,14 +370,29 @@ a {
 }
 
 .l-header__form {
+  width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 320px;
-  margin: 36px 24px;
+  margin: 36px auto 0;
+}
+
+.p-content {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  top: -5px;
+}
+.p-content__title {
+  position: absolute;
+  top: 128px;
+  left: 25px;
+  color: #fff;
+  font-size: 36px;
+  font-family: "M+ 1m";
 }
 
 .l-sidebar {
@@ -392,21 +407,35 @@ a {
   width: 51px;
 }
 
+.p-form {
+  position: relative;
+  left: -4px;
+  /*カンプ位置合わせ*/
+}
 .p-form__text {
   background-color: #fff;
   border: 1px solid #707070;
   border-radius: 10px;
-  position: relative;
   width: 230px;
   height: 46px;
 }
+.p-form__image {
+  width: 24ox;
+  height: 24px;
+  position: absolute;
+  top: 11px;
+  left: 16px;
+}
 .p-form__btn {
-  background-color: #F2EDE9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F2EDE9), to(#DED8D3));
+  background: linear-gradient(to bottom, #F2EDE9, #DED8D3);
   border: 1px solid #707070;
   border-radius: 10px;
-  font-weight: bold;
   color: #707070;
   width: 78px;
   height: 46px;
+  font-family: "M+ 1m";
+  font-size: 16px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

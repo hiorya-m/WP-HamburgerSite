@@ -1,7 +1,7 @@
 @use "../global" as g;
 
 .l-header {
-  background-color: g.$main-color;
+  background-color: g.$primary-color;
   height: 220px;
 }
 
@@ -14,5 +14,5 @@
     width: 320px;
     display: flex;
     justify-content: space-between;
-    margin: 36px 24px;
+    margin: 36px auto 0;
 }
