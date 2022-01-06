@@ -330,7 +330,7 @@ body {
   width: 100%;
   font-size: 1.6rem;
   line-height: 1;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "M+ 1m", "Noto Sans JP", sans-serif;
 }
 
 img {
@@ -360,39 +360,22 @@ a {
 }
 
 .l-header {
-  background-color: #FFF7EF;
   height: 220px;
 }
 
-.l-header__logo {
-  text-align: center;
-  padding-top: 40px;
-}
-
-.l-header__form {
-  width: 320px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 36px auto 0;
-}
-
-.p-content {
+.p-articre {
   -o-object-fit: cover;
      object-fit: cover;
   position: relative;
   top: -5px;
 }
-.p-content__title {
+.p-articre__title {
   position: absolute;
   top: 128px;
   left: 25px;
   color: #fff;
   font-size: 36px;
-  font-family: "M+ 1m";
+  font-weight: bold;
 }
 
 .l-sidebar {
@@ -402,40 +385,108 @@ a {
 }
 
 .l-sidebar__title {
-  margin-top: 14px;
+  margin-top: 17px;
   margin-right: 16px;
   width: 51px;
+  font-family: "Roboto";
+  font-size: 20px;
+  color: #707070;
 }
 
-.p-form {
+.p-header {
+  background-color: #FFF7EF;
+}
+.p-header__logo {
+  text-align: center;
+  padding-top: 47px;
+  font-family: "Roboto";
+  font-size: 40px;
+  color: #707070;
+}
+
+.p-search-form {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 44px auto 0;
   position: relative;
   left: -4px;
   /*カンプ位置合わせ*/
 }
-.p-form__text {
-  background-color: #fff;
-  border: 1px solid #707070;
-  border-radius: 10px;
-  width: 230px;
-  height: 46px;
-}
-.p-form__image {
+.p-search-form__label {
   width: 24ox;
   height: 24px;
   position: absolute;
   top: 11px;
   left: 16px;
 }
-.p-form__btn {
-  background: -webkit-gradient(linear, left top, left bottom, from(#F2EDE9), to(#DED8D3));
-  background: linear-gradient(to bottom, #F2EDE9, #DED8D3);
+.p-search-form__keyword {
+  background-color: #fff;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  width: 230px;
+  height: 46px;
+}
+.p-search-form__button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F2EDE9), to(#ded8d3));
+  background: linear-gradient(to bottom, #F2EDE9, #ded8d3);
   border: 1px solid #707070;
   border-radius: 10px;
   color: #707070;
   width: 78px;
   height: 46px;
-  font-family: "M+ 1m";
-  font-size: 16px;
   font-weight: bold;
+}
+
+.p-list {
+  position: relative;
+}
+
+.p-list__image {
+  width: 335px;
+  height: auto;
+  margin: 13px 20px 8px;
+}
+
+.p-list__title {
+  position: absolute;
+  top: 31px;
+  left: 30px;
+  color: #EAEAEA;
+  font-size: 41px;
+  font-family: "Roboto";
+}
+
+.p-description {
+  width: 314px;
+  height: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 30px auto 5px;
+  position: relative;
+  top: -382px;
+  color: #3C2A10;
+}
+
+.p-description__title {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 25px 10px 10px;
+}
+
+.p-description__item {
+  display: inline;
+  padding: 20px 10px;
+  line-height: 1.4;
 }
 /*# sourceMappingURL=style.css.map */

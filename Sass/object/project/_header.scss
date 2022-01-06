@@ -1,0 +1,12 @@
+@use "../../global" as g;
+
+.p-header {
+  background-color: g.$primary-color;
+  &__logo {
+    text-align: center;
+    padding-top: 47px;
+    font-family: "Roboto";
+    font-size: 40px;
+    color: #707070;
+  }
+}

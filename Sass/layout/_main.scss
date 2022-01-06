@@ -1,6 +1,6 @@
 @use "../global" as g;
 
-.p-content {
+.p-articre {
     object-fit: cover;
     position: relative;
     top: -5px;
@@ -10,6 +10,6 @@
         left: 25px;
         color: #fff;
         font-size: 36px;
-        font-family: 'M+ 1m';
+        font-weight: bold;
     }
 }

@@ -9,79 +9,83 @@
 </head>
 
 <body>
-    <div id="l-container">
+    <div class="l-container">
 
-        <header class="l-header">
-            <h1 class="l-header__logo">
-                <img src="./img/header_logo.png">
-            </h1>
+        <header class="l-header p-header">
+            <h1 class="p-header__logo">Hamburger</h1>
 
-            <form class="l-header__form p-form" method="post">
-                <div >
-                    <input class="p-form__text" type="search" name="search">
-                    <img class="p-form__image" src="./img/header_icon_search.svg">
-                </div>
-                <button class="p-form__btn" type="submit">検索</button>
+            <form class="p-search-form" method="post">
+                <label class="p-search-form__label" for="search-icon">
+                    <img src="./img/header_icon_search.svg" alt="検索アイコン">
+                </label>
+                <input class="p-search-form__keyword" type="search" name="search" id="search-icon">
+                <button class="p-search-form__button" type="submit">検索</button>
             </form>
         </header>
-        
+
         <main class=" l-main">
 
-                    <article class="p-content">
-                        <!-- <img src="./img/index/pagetop.png"> -->
-                        <img src="./img/index/pagetop-sp.png">
-                        <h2 class="p-content__title">ダミーサイト</h2>
-                    </article>
+            <article class="p-articre">
+                <h2 class="p-articre__title">ダミーサイト</h2>
+                <img src="./img/index/pagetop-sp.png">
+                <!-- <img src="./img/index/pagetop.png"> -->
+            </article>
 
-                    <div class="p-branch-menu">
-                        <ul class="p-branch-menu__list">
-                            <li>
-                                <img src="./img/index/main_bg01.png">
-                                <h2>Take Out</h2>
-                                <dl>
-                                    <dt>小見出しが入ります。</dt>
-                                    <dd>テキストが入ります。</dd>
-                                </dl>
-                            </li>
-                            <li>
-                                <img src="./img/index/main_bg02.png">
-                                <h2>Eat In</h2>
-                                <dl>
-                                    <dt>小見出しが入ります。</dt>
-                                    <dl>テキストが入ります</dl>
-                                </dl>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="p-branch-menu">
+                <ul class="p-branch-menu__list">
+                    <li class="p-list">
+                        <img class="p-list__image" src="./img/index/main_bg01.png">
+                        <h2 class="p-list__title">Take Out</h2>
+                        <dl class="p-description">
+                            <dt class="p-description__title">Take OUT</dt>
+                            <dd class="p-description__item">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                        </dl>
+                        <dl class="p-description">
+                            <dt class="p-description__title">Take OUT</dt>
+                            <dd class="p-description__item">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                        </dl>
+                    </li>
+                    <li class="p-list">
+                        <img class="p-list__image" src="./img/index/main_bg02.png">
+                        <h2 class="p-list__title">Eat In</h2>
+                        <dl class="p-description">
+                            <dt class="p-description__title">Take OUT</dt>
+                            <dd class="p-description__item">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                        </dl>
+                        <dl class="p-description">
+                            <dt class="p-description__title">Take OUT</dt>
+                            <dd class="p-description__item">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
 
-                    <section class="p-acsess">
-                        <h2>見出しが入ります</h2>
-                        <p>テキストが入ります。</p>
+            <section class="p-acsess">
+                <h2>見出しが入ります</h2>
+                <p>テキストが入ります。</p>
 
-                        <div class="p-map"></div>
-                    </section>
+                <div class="p-map"></div>
+            </section>
 
-                    </main>
+        </main>
 
-                    <aside class="l-sidebar">
-                        <h2 class="l-sidebar__title">
-                            <img src="./img/sidebar_logo.png">
-                        </h2>
-                        <ul>
-                            <li></li>
-                        </ul>
-                    </aside>
+        <aside class="l-sidebar">
+            <h2 class="l-sidebar__title">Menu</h2>
+            <ul>
+                <li></li>
+            </ul>
+        </aside>
 
-                    <footer class="l-footer">
-                        <img src="./img/footer_bg.png">
-                        <ul>
-                            <li>ショップ情報</li>
-                            <li>ヒストリー</li>
-                        </ul>
-                        <address>
-                            <p>Copyright:RaisTech</p>
-                        </address>
-                    </footer>
+        <footer class="l-footer">
+            <img src="./img/footer_bg.png">
+            <ul>
+                <li>ショップ情報</li>
+                <li>ヒストリー</li>
+            </ul>
+            <address>
+                <p>Copyright:RaisTech</p>
+            </address>
+        </footer>
 
     </div>
 

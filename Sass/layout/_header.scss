@@ -1,18 +1,5 @@
 @use "../global" as g;
 
 .l-header {
-  background-color: g.$primary-color;
   height: 220px;
-}
-
-.l-header__logo {
-  text-align: center;
-  padding-top: 40px;
-}
-
-.l-header__form {
-    width: 320px;
-    display: flex;
-    justify-content: space-between;
-    margin: 36px auto 0;
 }

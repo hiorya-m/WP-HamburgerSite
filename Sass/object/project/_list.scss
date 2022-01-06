@@ -1,0 +1,22 @@
+@use "../../global/" as g; 
+
+.p-list {
+    position: relative;
+    // height: 660px;
+    
+}
+
+.p-list__image {
+    width: 335px;
+    height: auto;
+    margin: 13px 20px 8px;
+}
+
+.p-list__title {
+    position: absolute;
+    top: 31px;
+    left: 30px;
+    color: #EAEAEA;
+    font-size: 41px;
+    font-family: "Roboto";
+}
