@@ -1,0 +1,25 @@
+@use "../../global/" as g;
+
+.p-menu {
+  display: flex;
+  flex-direction: column;
+  @include g.mq(tab) {
+    flex-direction: row;
+  }
+  @include g.mq(pc) {
+  }
+}
+
+.p-menu__item {
+  margin: 13px 20px 8px;
+  position: relative;
+}
+
+.p-menu__title {
+  position: absolute;
+  top: 20px;
+  left: 12px;
+  color: #eaeaea;
+  font-size: 41px;
+  font-family: "Roboto";
+}

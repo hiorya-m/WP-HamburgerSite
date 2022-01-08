@@ -1,0 +1,10 @@
+@use "../../global/" as g;
+
+.c-keyword {
+    width: 100%;
+    height: 46px;
+    background-color: #fff;
+    border: 1px solid g.$main-color;
+    border-radius: 10px;
+    box-sizing: border-box;
+}

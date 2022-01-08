@@ -1,12 +1,20 @@
 @use "../../global" as g;
 
 .p-header {
-  background-color: g.$primary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: g.$header-color;
+  @include g.mq(pc) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 65px;
+  }
   &__logo {
-    text-align: center;
-    padding-top: 47px;
-    font-family: "Roboto";
     font-size: 40px;
-    color: #707070;
+    @include g.mq(pc) {
+      font-size: 64px;
+    }
   }
 }

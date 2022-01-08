@@ -12,53 +12,52 @@
     <div class="l-container">
 
         <header class="l-header p-header">
-            <h1 class="p-header__logo">Hamburger</h1>
+            <h1 class="c-title p-header__logo">Hamburger</h1>
 
             <form class="p-search-form" method="post">
-                <label class="p-search-form__label" for="search-icon">
-                    <img src="./img/header_icon_search.svg" alt="検索アイコン">
+                <label class="p-search-form__keyword">
+                    <input class="c-keyword " type="search" name="search">
+                    <img class="c-icon" src="./img/header_icon_search.svg" alt="検索アイコン">
                 </label>
-                <input class="p-search-form__keyword" type="search" name="search" id="search-icon">
-                <button class="p-search-form__button" type="submit">検索</button>
+                <button class="c-button p-search-form__button" type="submit">検索</button>
             </form>
         </header>
 
         <main class=" l-main">
 
-            <article class="p-articre">
-                <h2 class="p-articre__title">ダミーサイト</h2>
+            <section class="p-page-top">
+                <h2 class="p-page-top__title">ダミーサイト</h2>
                 <img src="./img/index/pagetop-sp.png">
                 <!-- <img src="./img/index/pagetop.png"> -->
-            </article>
+            </section>
 
-            <div class="p-branch-menu">
-                <ul class="p-branch-menu__list">
-                    <li class="p-list">
-                        <img class="p-list__image" src="./img/index/main_bg01.png">
-                        <h2 class="p-list__title">Take Out</h2>
-                        <dl class="p-description">
-                            <dt class="p-description__title">Take OUT</dt>
-                            <dd class="p-description__item">当店のテイクアウトで利用できる商品を掲載しています</dd>
-                        </dl>
-                        <dl class="p-description">
-                            <dt class="p-description__title">Take OUT</dt>
-                            <dd class="p-description__item">当店のテイクアウトで利用できる商品を掲載しています</dd>
-                        </dl>
-                    </li>
-                    <li class="p-list">
-                        <img class="p-list__image" src="./img/index/main_bg02.png">
-                        <h2 class="p-list__title">Eat In</h2>
-                        <dl class="p-description">
-                            <dt class="p-description__title">Take OUT</dt>
-                            <dd class="p-description__item">当店のテイクアウトで利用できる商品を掲載しています</dd>
-                        </dl>
-                        <dl class="p-description">
-                            <dt class="p-description__title">Take OUT</dt>
-                            <dd class="p-description__item">当店のテイクアウトで利用できる商品を掲載しています</dd>
-                        </dl>
-                    </li>
-                </ul>
-            </div>
+            <ul class="p-menu">
+                <li class="p-menu__item">
+                    <img src="./img/index/main_bg01.png">
+                    <h2 class="p-menu__title">Take Out</h2>
+                    <dl class="p-content">
+                        <dt class="p-content__title">Take OUT</dt>
+                        <dd class="p-content__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                    </dl>
+                    <dl class="p-content">
+                        <dt class="p-content__title">Take OUT</dt>
+                        <dd class="p-content__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                    </dl>
+                </li>
+
+                <li class="p-menu__item">
+                    <img src="./img/index/main_bg02.png">
+                    <h2 class="p-menu__title">Eat In</h2>
+                    <dl class="p-content">
+                        <dt class="p-content__title">Take OUT</dt>
+                        <dd class="p-content__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                    </dl>
+                    <dl class="p-content">
+                        <dt class="p-content__title">Take OUT</dt>
+                        <dd class="p-content__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                    </dl>
+                </li>
+            </ul>
 
             <section class="p-acsess">
                 <h2>見出しが入ります</h2>
@@ -69,8 +68,8 @@
 
         </main>
 
-        <aside class="l-sidebar">
-            <h2 class="l-sidebar__title">Menu</h2>
+        <aside class="l-sidebar p-sidebar">
+            <h2 class="p-sidebar__title">Menu</h2>
             <ul>
                 <li></li>
             </ul>

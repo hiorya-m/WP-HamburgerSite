@@ -1,0 +1,7 @@
+@use "../../global/" as g;
+
+.c-button {
+  background: linear-gradient(to bottom, g.$button-color, #ded8d3);
+  border: 1px solid g.$main-color;
+  border-radius: 10px;
+}

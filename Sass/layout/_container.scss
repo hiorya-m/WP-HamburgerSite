@@ -1,1 +1,10 @@
 @use "../global" as g;
+
+.l-container {
+  display: grid;
+  grid-template-rows: 220px 1fr 150px;
+  grid-template-columns: 1fr;
+  @include g.mq(pc) {
+    grid-template-columns: 1fr 20%;
+  }
+}

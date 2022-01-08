@@ -1,2 +1,6 @@
 @use "../global" as g;
 
+.l-footer {
+    grid-row: 3;
+    grid-column: 1;
+}

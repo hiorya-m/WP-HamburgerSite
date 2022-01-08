@@ -1,0 +1,22 @@
+@use "../../global/" as g;
+
+.p-content {
+    background-color: rgba($color: #FFF, $alpha: 0.8);
+    height: auto;
+    margin: 10px;
+    color: g.$font-color;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.p-content__title {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px 10px;
+}
+
+.p-content__text {
+    padding: 0 10px 20px;
+    line-height: 1.5;
+}

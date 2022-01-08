@@ -1,0 +1,19 @@
+@use "../../global/" as g;
+
+.p-page-top {
+    // background: url(../../../img/index/pagetop-sp.png),no-repeat,center,center;
+    // width: 100%;
+    position: relative;
+    top: -5px;
+    // @include g.mq(tab) {
+    //   background: url(../../../img/index/pagetop.png),no-repeat,center,center;
+    // }
+    &__title {
+        position: absolute;
+        top: 128px;
+        left: 25px;
+        color: #fff;
+        font-size: 36px;
+        font-weight: bold;
+    }
+}

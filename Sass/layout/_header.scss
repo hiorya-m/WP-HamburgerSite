@@ -1,5 +1,6 @@
 @use "../global" as g;
 
 .l-header {
-  height: 220px;
+  grid-row: 1;
+  grid-column: 1;
 }
