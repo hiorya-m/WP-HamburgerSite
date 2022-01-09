@@ -7,17 +7,16 @@
   gap: 12px;
   @include g.mq(tab) {
     grid-template-columns: 396px 136px;
+    gap: 14px;
   }
   &__keyword {
     grid-row: 1;
     grid-column: 1;
-    box-sizing: border-box;
   }
   &__button {
     grid-row: 1;
     grid-column: 2;
     color: g.$main-color;
     font-weight: bold;
-    box-sizing: border-box;
   }
 }
