@@ -5,17 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hamburger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 
 <body>
-<!-- グリッドレイアウト -->
+    <!-- グリッドレイアウト -->
     <div class="l-container">
-    <!-- ヘッダー -->
+        <!-- ヘッダー -->
         <header class="l-header">
             <div class="p-header">
                 <h1 class="c-title p-header__logo">Hamburger</h1>
-    <!-- サーチフォーム -->
+                <!-- サーチフォーム -->
                 <div class="p-header__form">
                     <form class="p-search-form" method="post">
                         <label class="p-search-form__keyword">
@@ -27,45 +31,49 @@
                 </div>
             </div>
         </header>
-<!-- メインメニュー -->
+        <!-- メインメニュー -->
         <main class=" l-main">
             <article class="p-articre">
-    <!-- ページトップ -->
+                <!-- ページトップ -->
                 <div class="p-page-top">
-                    <img class="p-page-top__image--ps" src="./img/index/pagetop-sp.png" >
+                    <img class="p-page-top__image--ps" src="./img/index/pagetop-sp.png">
                     <img class="p-page-top__image--tab" src="./img/index/pagetop.png">
                     <h2 class="p-page-top__title">ダミーサイト</h2>
                 </div>
-    <!-- メニュー表示 -->
-                <div>
-                    <ul class="p-menu">
-                        <li class="p-menu__item">
-                            <img src="./img/index/main_bg01.png">
-                            <h2 class="p-menu__title">Take Out</h2>
-                            <dl class="p-content">
-                                <dt class="p-content__title">Take OUT</dt>
-                                <dd class="p-content__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
-                            </dl>
-                            <dl class="p-content">
-                                <dt class="p-content__title">Take OUT</dt>
-                                <dd class="p-content__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
-                            </dl>
+                <!-- メニュー表示 -->
+                <div class="p-home-product">
+                    <ul class="p-home-product__inner">
+                        <li class="p-home-menu p-home-product__inner--item">
+                            <!-- <a class="p-home-menu__link" href="#"></a> -->
+                            <h2 class="c-title p-home-menu__title">Take Out</h2>
+                            <div class="p-home-menu__body">
+                                <dl class="p-home-description">
+                                    <dt class="p-home-description__title">Take OUT</dt>
+                                    <dd class="p-home-description__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                </dl>
+                                <dl class="p-home-description">
+                                    <dt class="p-home-description__title">Take OUT</dt>
+                                    <dd class="p-home-description__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                </dl>
+                            </div>
                         </li>
-                        <li class="p-menu__item">
-                            <img src="./img/index/main_bg02.png">
-                            <h2 class="p-menu__title">Eat In</h2>
-                            <dl class="p-content">
-                                <dt class="p-content__title">Take OUT</dt>
-                                <dd class="p-content__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
-                            </dl>
-                            <dl class="p-content">
-                                <dt class="p-content__title">Take OUT</dt>
-                                <dd class="p-content__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
-                            </dl>
+                        <li class="p-home-menu p-home-product__inner--item">
+                            <!-- <a class="p-home-menu__link" href="#"></a> -->
+                            <h2 class="c-title p-home-menu__title">Take Out</h2>
+                            <div class="p-home-menu__body">
+                                <dl class="p-home-description">
+                                    <dt class="p-home-description__title">Take OUT</dt>
+                                    <dd class="p-home-description__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                </dl>
+                                <dl class="p-home-description">
+                                    <dt class="p-home-description__title">Take OUT</dt>
+                                    <dd class="p-home-description__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                </dl>
+                            </div>
                         </li>
                     </ul>
                 </div>
-    <!-- アクセスマップ -->
+                <!-- アクセスマップ -->
                 <section class="p-acsess">
                     <h2>見出しが入ります</h2>
                     <p>テキストが入ります。</p>
@@ -74,16 +82,16 @@
             </article>
 
         </main>
-<!-- サイドバー -->
+        <!-- サイドバー -->
         <aside class="l-sidebar">
             <h2 class="p-sidebar__title">Menu</h2>
             <ul>
                 <li></li>
             </ul>
         </aside>
-<!-- フッター -->
+        <!-- フッター -->
         <footer class="l-footer">
-            <img src="./img/footer_bg.png">
+            <img src="./img/common/footer_bg.png">
             <ul>
                 <li>ショップ情報</li>
                 <li>ヒストリー</li>
@@ -92,11 +100,12 @@
                 <p>Copyright:RaisTech</p>
             </address>
         </footer>
-<!-- グリッド終了 -->
+        <!-- グリッド終了 -->
     </div>
-<!-- スクリプト読み込み -->
+    <!-- スクリプト読み込み -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./JS/script.js"></script>
 </body>
+
 </html>

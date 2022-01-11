@@ -1,0 +1,18 @@
+@use "../../global/" as g;
+
+.p-home-description {
+    background-color: rgba($color: #FFF, $alpha: .7);
+    margin: 9px 10px 10px 11px;
+    padding: 19px 14px 23px 10px;
+    color: g.$font-color;
+    font-family: "M+ 1m";
+    &__title {
+        font-size: 22px;
+        font-weight: bold;
+    }
+    &__text {
+        font-size: 16px;
+        margin-top: 19px;
+        line-height: 1.4;
+    }
+}

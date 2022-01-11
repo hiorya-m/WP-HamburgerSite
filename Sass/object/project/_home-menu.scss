@@ -1,0 +1,25 @@
+@use "../../global/" as g;
+
+.p-home-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 642px;
+    @include g.mq(tab) {
+        min-height: 681px;
+    }
+    @include g.mq(pc) {
+        min-height: 1193px;
+    }
+    &:nth-child(1) {
+        background: url(../../../img/index/main_bg01.png) no-repeat center/cover;
+    }
+    &:nth-child(2) {
+        background: url(../../../img/index/main_bg02.png) no-repeat center/cover;
+    }
+    &__title {
+        font-size: 41px;
+        color: #EAEAEA;
+        margin: 17px 12px;
+    }
+}
