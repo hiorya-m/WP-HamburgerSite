@@ -1,18 +1,32 @@
 @use "../../global/" as g;
 
 .p-home-description {
-    background-color: rgba($color: #FFF, $alpha: .7);
+    background-color: rgba($color: #FFF, $alpha: .8);
+    min-height: 163px;
     margin: 9px 10px 10px 11px;
-    padding: 19px 14px 23px 10px;
+    padding: 22px 14px 23px 10px;
     color: g.$font-color;
     font-family: "M+ 1m";
+    @include g.mq(tab) {
+        min-height: 172px;
+    }
+    @include g.mq(pc) {
+        margin: 20px;
+        padding: 17px 19px;
+    }
     &__title {
         font-size: 22px;
         font-weight: bold;
+        @include g.mq(tab) {
+            font-size: 24px;
+        }
     }
     &__text {
         font-size: 16px;
-        margin-top: 19px;
+        margin-top: 23px;
         line-height: 1.4;
+        @include g.mq(pc) {
+            margin-top: 32px;
+        }
     }
 }

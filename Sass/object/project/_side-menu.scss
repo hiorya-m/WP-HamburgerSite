@@ -1,0 +1,23 @@
+@use "../../global/" as g;
+
+.p-side-menu {
+  font-size: 24px;
+  color: g.$main-color;
+  font-weight: bold;
+  margin-top: 34px;
+  @include g.mq(pc) {
+    margin-top: 70px;
+  }
+  &__list {
+    font-size: 20px;
+    font-weight: initial;
+    margin-top: 40px;
+    margin-left: 32px;
+    > li {
+      margin-bottom: 23px;
+      @include g.mq(pc) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

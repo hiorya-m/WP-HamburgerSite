@@ -8,7 +8,7 @@
       height: 530px;
   }
   &__image--ps {
-    min-width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
     @include g.mq(tab) {
@@ -19,7 +19,7 @@
     display: none;
     @include g.mq(tab) {
       display: block;
-      min-width: 100%;
+      width: 100%;
       height: 100%;
       object-fit: cover;
     }

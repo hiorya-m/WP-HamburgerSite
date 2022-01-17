@@ -30,6 +30,8 @@
                     </form>
                 </div>
             </div>
+            <!-- サイドバー展開用 -->
+            <button class="p-sidebar-open c-title">Menu</button>
         </header>
         <!-- メインメニュー -->
         <main class=" l-main">
@@ -44,7 +46,6 @@
                 <div class="p-home-product">
                     <ul class="p-home-product__inner">
                         <li class="p-home-menu p-home-product__inner--item">
-                            <!-- <a class="p-home-menu__link" href="#"></a> -->
                             <h2 class="c-title p-home-menu__title">Take Out</h2>
                             <div class="p-home-menu__body">
                                 <dl class="p-home-description">
@@ -58,49 +59,90 @@
                             </div>
                         </li>
                         <li class="p-home-menu p-home-product__inner--item">
-                            <!-- <a class="p-home-menu__link" href="#"></a> -->
-                            <h2 class="c-title p-home-menu__title">Take Out</h2>
+                            <h2 class="c-title p-home-menu__title">Eat In</h2>
                             <div class="p-home-menu__body">
                                 <dl class="p-home-description">
-                                    <dt class="p-home-description__title">Take OUT</dt>
-                                    <dd class="p-home-description__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                    <dt class="p-home-description__title">Eat In</dt>
+                                    <dd class="p-home-description__text">当店のイートインで利用できる商品を掲載しています</dd>
                                 </dl>
                                 <dl class="p-home-description">
-                                    <dt class="p-home-description__title">Take OUT</dt>
-                                    <dd class="p-home-description__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
+                                    <dt class="p-home-description__title">Eat In</dt>
+                                    <dd class="p-home-description__text">当店のイートインで利用できる商品を掲載しています</dd>
                                 </dl>
                             </div>
                         </li>
                     </ul>
                 </div>
                 <!-- アクセスマップ -->
-                <section class="p-acsess">
-                    <h2>見出しが入ります</h2>
-                    <p>テキストが入ります。</p>
-                    <div class="p-map"></div>
+                <section class="p-acsess c-map">
+                    <div class="p-acsess__body">
+                        <h2 class="p-acsess__body__title">見出しが入ります</h2>
+                        <p class="p-acsess__body__text">
+                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                            テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入りま
+                        </p>
+                    </div>
                 </section>
             </article>
-
+            <!-- メインここまで -->
         </main>
         <!-- サイドバー -->
-        <aside class="l-sidebar">
-            <h2 class="p-sidebar__title">Menu</h2>
-            <ul>
-                <li></li>
-            </ul>
+        <aside class="l-sidebar p-sidebar">
+            <div class="p-sidebar__inner">
+                <h2 class="p-sidebar__inner__title c-title">Menu</h2>
+                <div class="c-close p-sidebar__inner__button">
+                    <span class="c-close__right"></span>
+                    <span class="c-close__left"></span>
+                </div>
+                <div class="p-sidebar__inner__list c-text__m">
+                    <a href="#" class="p-side-menu">バーガー
+                        <ul class="p-side-menu__list">
+                            <li>ハンバーガー</li>
+                            <li>チーズバーガー</li>
+                            <li>テリヤキバーガー</li>
+                            <li>アボカドバーガー</li>
+                            <li>フィッシュバーガー</li>
+                            <li>ベーコンバーガー</li>
+                            <li>チキンバーガー</li>
+                        </ul>
+                    </a>
+                    <a href="#" class="p-side-menu">サイド
+                        <ul class="p-side-menu__list">
+                            <li>ポテト</li>
+                            <li>サラダ</li>
+                            <li>ナゲット</li>
+                            <li>コーン</li>
+                        </ul>
+                    </a>
+                    <a href="#" class="p-side-menu">ドリンク
+                        <ul class="p-side-menu__list">
+                            <li>コーラ</li>
+                            <li>ファンタ</li>
+                            <li>オレンジ</li>
+                            <li>アップル</li>
+                            <li>紅茶(Ice/Hot)</li>
+                            <li>コーヒー(Ice/Hot)</li>
+                        </ul>
+                    </a>
+                </ul>
+            </div>
+        </div>
         </aside>
         <!-- フッター -->
         <footer class="l-footer">
-            <img src="./img/common/footer_bg.png">
-            <ul>
-                <li>ショップ情報</li>
-                <li>ヒストリー</li>
-            </ul>
-            <address>
-                <p>Copyright:RaisTech</p>
-            </address>
+            <div class="p-footer">
+                <ul class="p-footer__list">
+                    <li class="p-footer__list__item">ショップ情報</li>
+                    <li class="p-footer__list__item">ヒストリー</li>
+                </ul>
+                <div class="c-copyright">
+                    <p>Copyright: RaisTech</p>
+                </div>
+            </div>
         </footer>
-        <!-- グリッド終了 -->
+        <!-- グリッドここまで -->
     </div>
     <!-- スクリプト読み込み -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"

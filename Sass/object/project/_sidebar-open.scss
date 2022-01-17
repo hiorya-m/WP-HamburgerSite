@@ -1,0 +1,15 @@
+@use "../../global/" as g;
+
+.p-sidebar-open {
+    font-size: 20px;
+    color: g.$main-color;
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    @include g.mq(tab) {
+      font-size: 34px;
+    }
+    @include g.mq(pc) {
+      display: none;
+    }
+  }

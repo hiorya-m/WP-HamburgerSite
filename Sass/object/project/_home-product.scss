@@ -6,7 +6,7 @@
         margin: 40px;
     }
     @include g.mq(pc) {
-        margin: 120px;
+        margin: 120px 112px 131px 111px;
     }
     &__inner {
         display: grid;

@@ -5,6 +5,6 @@
   grid-template-rows: 217px 1fr 150px;
   grid-template-columns: 1fr;
   @include g.mq(pc) {
-    grid-template-columns: 1fr 367px;
+    grid-template-columns: 1fr 20%;
   }
 }

@@ -1,0 +1,38 @@
+@use "../../global/" as g;
+
+.c-map {
+  background: url(../../../img/index/map_bg01.png) no-repeat center bottom /
+    cover;
+  position: relative;
+  @include g.mq(tab) {
+    background: url(../../../img/index/map_bg01.png) no-repeat left center /
+      cover;
+  }
+  &::before {
+    content: "";
+    background-color: rgba($color: #000, $alpha: 0.4);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+  }
+  &::after {
+    content: "";
+    background-color: rgba($color: #000, $alpha: 0.3);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-height: 415px;
+    z-index: 1;
+    @include g.mq(tab) {
+      max-height: 100%;
+    }
+    @include g.mq(pc) {
+      max-width: 62%;
+    }
+  }
+}

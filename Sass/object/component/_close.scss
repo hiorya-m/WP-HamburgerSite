@@ -1,0 +1,22 @@
+@use "../../global/" as g;
+
+.c-close {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    &__right, &__left {
+        width: 32px;
+        height: 6px;
+        background-color: g.$main-color;
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: 0;
+    }
+    &__right{
+        transform: rotate(45deg);
+    }
+    &__left {
+        transform: rotate(-45deg);
+    }
+}

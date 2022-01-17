@@ -1,0 +1,8 @@
+@use "../../global/" as g;
+
+.c-text {
+    font-family: "Roboto";
+    &__m {
+        font-family: "M+ 1m";
+    }
+}
