@@ -505,6 +505,16 @@ a {
   transform: rotate(-45deg);
 }
 
+.c-fade-layer {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 50;
+}
+
 .p-header {
   width: 100%;
   height: 100%;
@@ -860,10 +870,7 @@ a {
 }
 
 .p-sidebar {
-  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: 100%;
-  z-index: 50;
 }
 .p-sidebar__inner {
   background-color: #f2ede9;
@@ -891,6 +898,11 @@ a {
   position: absolute;
   top: 25px;
   right: 17px;
+}
+@media (min-width: 1440px) {
+  .p-sidebar__inner__button {
+    display: none;
+  }
 }
 .p-sidebar__inner__list {
   margin-top: 212px;

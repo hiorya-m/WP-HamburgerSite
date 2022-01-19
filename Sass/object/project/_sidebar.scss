@@ -1,10 +1,7 @@
 @use "../../global/" as g;
 
 .p-sidebar {
-  background-color: rgba($color: #000000, $alpha: 0.5);
   width: 100%;
-  height: 100%;
-  z-index: 50;
   &__inner {
     background-color: #f2ede9;
     width: 328px;
