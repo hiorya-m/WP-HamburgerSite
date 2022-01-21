@@ -1,18 +1,15 @@
 @use "../../global/" as g;
 
 .p-sidebar {
-  width: 100%;
-  &__inner {
-    background-color: #f2ede9;
-    width: 328px;
-    height: 100%;
-    margin-left: auto;
-    position: relative;
-    @include g.mq(pc) {
-      width: 100%;
-    }
+  background-color: #f2ede9;
+  width: 328px;
+  height: 100%;
+  margin-left: auto;
+  position: relative;
+  @include g.mq(pc) {
+    width: 100%;
   }
-  &__inner__title {
+  &__title {
     color: g.$main-color;
     font-size: 0;
     @include g.mq(pc) {
@@ -21,7 +18,7 @@
     }
   }
 
-  &__inner__button {
+  &__button {
     position: absolute;
     top: 25px;
     right: 17px;
@@ -30,7 +27,7 @@
     }
   }
 
-  &__inner__list {
+  &__list {
     margin-top: 212px;
     margin-left: 46px;
     @include g.mq(pc) {

@@ -870,9 +870,6 @@ a {
 }
 
 .p-sidebar {
-  width: 100%;
-}
-.p-sidebar__inner {
   background-color: #f2ede9;
   width: 328px;
   height: 100%;
@@ -880,36 +877,36 @@ a {
   position: relative;
 }
 @media (min-width: 1440px) {
-  .p-sidebar__inner {
+  .p-sidebar {
     width: 100%;
   }
 }
-.p-sidebar__inner__title {
+.p-sidebar__title {
   color: #707070;
   font-size: 0;
 }
 @media (min-width: 1440px) {
-  .p-sidebar__inner__title {
+  .p-sidebar__title {
     font-size: 34px;
     padding: 88px 52px;
   }
 }
-.p-sidebar__inner__button {
+.p-sidebar__button {
   position: absolute;
   top: 25px;
   right: 17px;
 }
 @media (min-width: 1440px) {
-  .p-sidebar__inner__button {
+  .p-sidebar__button {
     display: none;
   }
 }
-.p-sidebar__inner__list {
+.p-sidebar__list {
   margin-top: 212px;
   margin-left: 46px;
 }
 @media (min-width: 1440px) {
-  .p-sidebar__inner__list {
+  .p-sidebar__list {
     margin-top: 88px;
     margin-left: 52px;
   }
