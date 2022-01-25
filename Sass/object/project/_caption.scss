@@ -1,0 +1,18 @@
+@use "../../global/" as g;
+
+.p-caption {
+    padding: 31px 73px 40px 17px;
+    @include g.mq(tab) {
+        padding-left: 35px;
+        padding-right: 59px;
+    }
+    @include g.mq(pc) {
+        padding: 53px 104px 60px 63px;
+    }
+    &__title--small {
+        margin-top: 24px;
+    }
+    &__text {
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,44 @@
+@use "../../global/" as g;
+
+.p-archive-top {
+    min-width: 375px;
+    height: 283px;
+    position: relative;
+    &__image {
+        background-color: #000;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center left;
+        @include g.mq(tab) {
+            object-position: center center;
+        }
+    }
+    &__heading {
+        position: absolute;
+        top: 102px;
+        left: 37px;
+        display: flex;
+        flex-direction: column;
+        @include g.mq(tab) {
+            flex-direction: row;
+            align-items: center;
+        }
+        &__title {
+            color: #FFF;
+            font-size: 36px;
+            @include g.mq(tab) {
+                font-size: 60px;
+            }
+        }
+        &__lead {
+            color: #FFF;
+            margin-top: 7px;
+            font-size: 16px;
+            @include g.mq(tab) {
+                margin-top: 0;
+                margin-left: 20px;
+            }
+        }
+    }
+}

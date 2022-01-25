@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <!-- グリッドレイアウト -->
+    <div class="l-container">
+        <!-- ヘッダー -->
+        <header class="l-header">
+            <div class="p-header">
+                <h1 class="c-title p-header__logo">Hamburger</h1>
+                <!-- サーチフォーム -->
+                <div class="p-header__form">
+                    <form class="p-search-form" method="post">
+                        <label class="p-search-form__keyword">
+                            <input class="c-keyword" type="search">
+                            <img class="c-icon" src="./img/common/header_icon_search.svg" alt="検索アイコン">
+                        </label>
+                        <button class="c-button p-search-form__button" type="submit">検索</button>
+                    </form>
+                </div>
+            </div>
+            <!-- サイドバー展開用 -->
+            <button class="p-sidebar-open c-title is-open">Menu</button>
+        </header>
+        <!-- メインメニュー -->
+        <main class=" l-main">
+            <article class="p-articre">
+                <!-- ページトップ -->
+                <div class="p-archive-top">
+                    <img class="p-archive-top__image" src="./img/archive/archivetop.png">
+                    <div class="p-archive-top__heading">
+                        <h2 class="p-archive-top__heading__title c-title">Menu:</h2>
+                        <p class="p-archive-top__heading__lead c-text__m">チーズバーガー</p>
+                    </div>
+                </div>
+                <!-- テキスト -->
+                <div class="p-archive-body c-text__m">
+                    <h2 class="p-archive-body__title">小見出しが入ります</h2>
+                    <p class="p-archive-body__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                    </p>
+                </div>
+                <!-- カード -->
+                <div class="p-archive-menu">
+                    <div class="p-archive-menu__wrapper">
+                        <figure class="c-card">
+                            <img src="./img/archive/menu-img01.png">
+                            <figcaption class="c-card__caption c-text__m">
+                                <div class="p-caption c-caption">
+                                    <h2 class="p-caption__title c-caption__title">チーズバーガー</h2>
+                                    <h3 class="p-caption__title--small c-caption__title--small">小見出しが入ります</h3>
+                                    <p class="p-caption__text c-caption__text">テキストが入ります。テキストが入ります。テキストが入ります。
+                                        テキストが入ります。テキストが入ります。テキストが入ります。
+                                    </p>
+                                </div>
+                                <div class="c-card__caption__button">
+                                    <button class="c-caption__button">詳しく見る</button>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="p-archive-menu__wrapper">
+                        <figure class="c-card">
+                            <img src="./img/archive/menu-img01.png">
+                            <figcaption class="c-card__caption c-text__m">
+                                <div class="p-caption c-caption">
+                                    <h2 class="p-caption__title c-caption__title">ダブルチーズバーガー</h2>
+                                    <h3 class="p-caption__title--small c-caption__title--small">小見出しが入ります</h3>
+                                    <p class="p-caption__text c-caption__text">テキストが入ります。テキストが入ります。テキストが入ります。
+                                        テキストが入ります。テキストが入ります。テキストが入ります。
+                                    </p>
+                                </div>
+                                <div class="c-card__caption__button">
+                                    <button class="c-caption__button">詳しく見る</button>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="p-archive-menu__wrapper">
+                        <figure class="c-card">
+                            <img src="./img/archive/menu-img01.png">
+                            <figcaption class="c-card__caption c-text__m">
+                                <div class="p-caption c-caption">
+                                    <h2 class="p-caption__title c-caption__title">スペシャルチーズバーガー</h2>
+                                    <h3 class="p-caption__title--small c-caption__title--small">小見出しが入ります</h3>
+                                    <p class="p-caption__text c-caption__text">テキストが入ります。テキストが入ります。テキストが入ります。
+                                        テキストが入ります。テキストが入ります。テキストが入ります。
+                                    </p>
+                                </div>
+                                <div class="c-card__caption__button">
+                                    <button class="c-caption__button">詳しく見る</button>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <!-- ページネーション -->
+                
+            </article>
+            <!-- メインここまで -->
+        </main>
+        <!-- サイドバー -->
+        <aside class="l-sidebar p-sidebar is-sidebar">
+            <h2 class="p-sidebar__title c-title">Menu</h2>
+            <div class="c-close p-sidebar__button is-close">
+                <span class="c-close__right"></span>
+                <span class="c-close__left"></span>
+            </div>
+            <div class="p-sidebar__list c-text__m">
+                <a href="#" class="p-side-menu">バーガー
+                    <ul class="p-side-menu__list">
+                        <li>ハンバーガー</li>
+                        <li>チーズバーガー</li>
+                        <li>テリヤキバーガー</li>
+                        <li>アボカドバーガー</li>
+                        <li>フィッシュバーガー</li>
+                        <li>ベーコンバーガー</li>
+                        <li>チキンバーガー</li>
+                    </ul>
+                </a>
+                <a href="#" class="p-side-menu">サイド
+                    <ul class="p-side-menu__list">
+                        <li>ポテト</li>
+                        <li>サラダ</li>
+                        <li>ナゲット</li>
+                        <li>コーン</li>
+                    </ul>
+                </a>
+                <a href="#" class="p-side-menu">ドリンク
+                    <ul class="p-side-menu__list">
+                        <li>コーラ</li>
+                        <li>ファンタ</li>
+                        <li>オレンジ</li>
+                        <li>アップル</li>
+                        <li>紅茶(Ice/Hot)</li>
+                        <li>コーヒー(Ice/Hot)</li>
+                    </ul>
+                </a>
+                </ul>
+            </div>
+        </aside>
+        <!-- フッター -->
+        <footer class="l-footer">
+            <div class="p-footer">
+                <ul class="p-footer__list">
+                    <li class="p-footer__list__item">ショップ情報</li>
+                    <li class="p-footer__list__item">ヒストリー</li>
+                </ul>
+                <div class="c-copyright">
+                    <p>Copyright: RaisTech</p>
+                </div>
+            </div>
+        </footer>
+        <!-- グリッドここまで -->
+    </div>
+    <!-- 黒フェード -->
+    <div class="c-fade-layer is-fade"></div>
+    <!-- スクリプト読み込み -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+@use "../../global/" as g;
+
+.p-archive-menu {
+    padding: 0 20px 62px;
+    @include g.mq(tab) {
+        padding: 0 35px 105px 43px;
+    }
+    @include g.mq(pc) {
+        padding: 0 100px 150px;
+    }
+    &__wrapper {
+        margin: 20px 0;
+        @include g.mq(pc) {
+            margin: 30px 0;
+        }
+    }
+}
