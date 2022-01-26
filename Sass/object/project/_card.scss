@@ -1,0 +1,41 @@
+@use "../../global/" as g;
+
+.p-card {
+    display: flex;
+    flex-direction: column;
+    @include g.mq(tab) {
+        flex-direction: row;
+    }
+    > img {
+        object-fit: cover;
+        max-height: 230px;
+        @include g.mq(tab) {
+            max-height: 100%;
+        }
+        @include g.mq(pc) {
+            min-width: 677px;
+        }
+    }
+    &__caption {
+        background-color: #3C2B1C;
+        &__button {
+            width: 163px;
+            height: 42px;
+            background-color: #FFF;
+            color: g.$main-color;
+            border-radius: 21px;
+            margin: 0 auto 44px;
+            display: block;
+            margin-bottom: 44px;
+            @include g.mq(tab) {
+                margin-bottom: 40px;
+            }
+            @include g.mq(pc) {
+                width: 292px;
+                height: 76px;
+                border-radius: 38px;
+                margin-bottom: 60px;
+            }
+        }
+    }
+}

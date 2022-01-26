@@ -1,0 +1,13 @@
+@use "../../global/" as g;
+
+.p-archive-card {
+    @include g.mq(tab) {
+        margin-top: 37px;
+    }
+    &__wrapper {
+        margin: 20px;
+        @include g.mq(tab) {
+            margin: 21px 35px 0 43px;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+@use "../../global/" as g;
+
+.p-pagination {
+  color: g.$main-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto 30px;
+  max-width: 334px;
+  @include g.mq(tab) {
+    max-width: 600px;
+    margin: 106px auto 30px;
+  }
+  @include g.mq(pc) {
+    max-width: 600px;
+    margin: 150px auto 60px;
+  }
+  > li {
+      padding: 10px 9px 9px 10px;
+      border: 1px solid g.$main-color;
+      cursor: pointer;
+      &:hover {
+          background: g.$font-color;
+          color: #FFF;
+      }
+  }
+  &__previous {
+    > a {
+      &::before {
+        content: "";
+        background: url(../../../img/archive/pagination-previous.svg);
+        display: inline-block;
+        width: 18px;
+        height: 17px;
+        margin-right: 8px;
+        vertical-align: middle;
+      }
+    }
+  }
+  &__next {
+    > a {
+      &::after {
+        content: "";
+        background: url(../../../img/archive/pagination-next.svg);
+        display: inline-block;
+        width: 18px;
+        height: 17px;
+        margin-left: 8px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.p-pagination {
+  &--sp {
+    @include g.mq(tab) {
+      display: none;
+    }
+  }
+  &--tab {
+      display: none;
+      @include g.mq(tab) {
+          display: block;
+      }
+  }
+}
