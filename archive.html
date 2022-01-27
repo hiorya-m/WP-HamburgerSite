@@ -21,12 +21,13 @@
                 <h1 class="c-title p-header__logo"><a href="index.html">Hamburger</a></h1>
                 <!-- サーチフォーム -->
                 <div class="p-header__form">
-                    <form class="p-search-form" method="post">
+                    <form class="p-search-form" action="archive-search.html" method="get">
                         <label class="p-search-form__keyword">
-                            <input class="c-keyword" type="search">
+                            <input class="c-keyword" type="search" name="search">
                             <img class="c-icon" src="./img/common/header_icon_search.svg" alt="検索アイコン">
                         </label>
-                        <button class="c-button p-search-form__button" type="submit">検索</button>
+                        <button class="c-button p-search-form__button" type="submit" name="submit"
+                            value="検索">検索</button>
                     </form>
                 </div>
             </div>
@@ -65,7 +66,9 @@
                                         テキストが入ります。テキストが入ります。テキストが入ります。
                                     </p>
                                 </div>
-                                <button class="p-card__caption__button">詳しく見る</button>
+                                <form action="single.html">
+                                    <button class="p-card__caption__button" type="submit">詳しく見る</button>
+                                </form>
                             </figcaption>
                         </figure>
                     </div>
@@ -80,7 +83,9 @@
                                         テキストが入ります。テキストが入ります。テキストが入ります。
                                     </p>
                                 </div>
-                                <button class="p-card__caption__button">詳しく見る</button>
+                                <form action="single.html">
+                                    <button class="p-card__caption__button" type="submit">詳しく見る</button>
+                                </form>
                             </figcaption>
                         </figure>
                     </div>
@@ -95,7 +100,9 @@
                                         テキストが入ります。テキストが入ります。テキストが入ります。
                                     </p>
                                 </div>
-                                <button class="p-card__caption__button">詳しく見る</button>
+                                <form action="single.html">
+                                    <button class="p-card__caption__button" type="submit">詳しく見る</button>
+                                </form>
                             </figcaption>
                         </figure>
                     </div>
@@ -132,36 +139,38 @@
                 <span class="c-close__left"></span>
             </div>
             <div class="p-sidebar__list c-text__m">
-                <a href="#" class="p-side-menu">バーガー
+                <div class="p-side-menu">
+                    <h3><a href="archive.html">バーガー</a></h3>
                     <ul class="p-side-menu__list">
-                        <li>ハンバーガー</li>
-                        <li>チーズバーガー</li>
-                        <li>テリヤキバーガー</li>
-                        <li>アボカドバーガー</li>
-                        <li>フィッシュバーガー</li>
-                        <li>ベーコンバーガー</li>
-                        <li>チキンバーガー</li>
+                        <li><a href="single.html">ハンバーガー</a></li>
+                        <li><a href="single.html">チーズバーガー</a></li>
+                        <li><a href="single.html">テリヤキバーガー</a></li>
+                        <li><a href="single.html">アボカドバーガ</a></li>
+                        <li><a href="single.html">フィッシュバーガー</a></li>
+                        <li><a href="single.html">ベーコンバーガー</a></li>
+                        <li><a href="single.html">チキンバーガー</a></li>
                     </ul>
-                </a>
-                <a href="#" class="p-side-menu">サイド
+                </div>
+                <div class="p-side-menu">
+                    <h3><a href="archive.html">サイド</a></h3>
                     <ul class="p-side-menu__list">
-                        <li>ポテト</li>
-                        <li>サラダ</li>
-                        <li>ナゲット</li>
-                        <li>コーン</li>
+                        <li><a href="single.html">ポテト</a></li>
+                        <li><a href="single.html">サラダ</a></li>
+                        <li><a href="single.html">ナゲット</a></li>
+                        <li><a href="single.html">コーン</a></li>
                     </ul>
-                </a>
-                <a href="#" class="p-side-menu">ドリンク
+                </div>
+                <div class="p-side-menu">
+                    <h3><a href="archive.html">ドリンク</a></h3>
                     <ul class="p-side-menu__list">
-                        <li>コーラ</li>
-                        <li>ファンタ</li>
-                        <li>オレンジ</li>
-                        <li>アップル</li>
-                        <li>紅茶(Ice/Hot)</li>
-                        <li>コーヒー(Ice/Hot)</li>
+                        <li><a href="single.html">コーラ</a></li>
+                        <li><a href="single.html">ファンタ</a></li>
+                        <li><a href="single.html">オレンジ</a></li>
+                        <li><a href="single.html">アップル</a></li>
+                        <li><a href="single.html">紅茶(Ice/Hot)</a></li>
+                        <li><a href="single.html">コーヒー(Ice/Hot)</a></li>
                     </ul>
-                </a>
-                </ul>
+                </div>
             </div>
         </aside>
         <!-- フッター -->

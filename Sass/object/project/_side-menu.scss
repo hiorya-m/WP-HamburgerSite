@@ -18,6 +18,9 @@
       @include g.mq(pc) {
         margin-bottom: 30px;
       }
+      > a {
+        display: inline;
+      }
     }
   }
 }
