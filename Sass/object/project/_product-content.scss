@@ -1,0 +1,22 @@
+@use "../../global/" as g;
+
+.p-product-content {
+  margin: 30px 20px 0;
+  display: flex;
+  > img {
+    min-width: 114px;
+    height: 89px;
+    margin-right: 10px;
+    border: solid 1px g.$main-color;
+  }
+  &__text {
+    line-height: 1.43;
+    height: 180px;
+    overflow: hidden;
+    font-family: "M+ 1m"
+  }
+  &--reverse {
+    @extend .p-product-content;
+    flex-direction: row-reverse;
+  }
+}

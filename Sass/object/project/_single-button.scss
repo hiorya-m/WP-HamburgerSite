@@ -1,0 +1,11 @@
+@use "../../global/" as g;
+
+.p-single-button {
+    width: 335px;
+    height: 81px;
+    margin: 30px auto 0;
+    > button {
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,23 @@
+@use "../../global/" as g;
+
+.p-blockquote {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px 16px 30px 20px;
+    &__text {
+        line-height: 1.43;
+        max-height: 505px;
+        overflow: hidden;
+        font-family: "M+ 1m";
+    }
+    &__source {
+        margin-top: 30px;
+    }
+    &__code {
+        font-family: "M+ 1m";
+        color: g.$font-color;
+        line-height: 1.43;
+        padding: 50px 59px 50px 50px;
+    }
+}

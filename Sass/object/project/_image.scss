@@ -1,0 +1,22 @@
+@use "../../global/" as g;
+
+.p-image {
+    margin: 30px 20px;
+    min-width: 335px;
+    max-height: 124px;
+    display: flex;
+    justify-content: center;
+    > img {
+        object-fit: cover;
+    }
+    &--medium {
+        margin: 30px 54px 0;
+        min-width: 267px;
+        max-height: 166px;
+        display: flex;
+        justify-content: center;
+        > img {
+            object-fit: cover;
+        }
+    }
+}
