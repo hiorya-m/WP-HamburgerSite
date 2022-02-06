@@ -4,4 +4,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include g.mq(tab) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 }

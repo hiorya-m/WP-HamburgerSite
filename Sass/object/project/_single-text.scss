@@ -1,5 +1,11 @@
 @use "../../global/" as g;
 
 .p-single-text {
-    margin: 30px 20px 177px;
+    padding: 30px 20px 177px;
+    @include g.mq(tab) {
+        padding: 60px 60px 228px;
+    }
+    @include g.mq(pc) {
+        padding: 60px 100px 353px;
+    }
 }

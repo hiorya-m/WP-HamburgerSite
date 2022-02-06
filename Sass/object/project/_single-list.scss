@@ -2,15 +2,31 @@
 
 .p-single-list {
     color: g.$font-color;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 60px;
-    padding-left: 20px;
-    &--ol {
-        color: g.$font-color;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 30px;
-        padding-left: 20px;
+    line-height: 1.43;
+    margin-top: 30px;
+    padding: 0 20px 0;
+    @include g.mq(tab) {
+        padding: 0 110px 0;
+    }
+    @include g.mq(pc) {
+        padding: 0 150px 0;
+    }
+    > ol {
+        padding-left: 28px;
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+    > ul {
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+    &__right {
+        margin-left: 24px
+    }
+    &--second {
+        @extend .p-single-list;
+        margin-top: 60px;
     }
 }

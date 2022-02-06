@@ -1,6 +1,9 @@
 @use "../../global/" as g;
 
 .c-table {
-    border-collapse: collapse;
-    border-color: g.$main-color;
+  border-collapse: collapse;
+  border: 1px solid g.$main-color;
+  & * {
+    border: 1px solid g.$main-color;
+  }
 }

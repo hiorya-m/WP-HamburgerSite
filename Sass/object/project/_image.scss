@@ -1,21 +1,41 @@
 @use "../../global/" as g;
 
 .p-image {
-    margin: 30px 20px;
-    min-width: 335px;
+    margin-top: 30px;
+    padding-right: 20px;
+    padding-left: 20px;
     max-height: 124px;
     display: flex;
     justify-content: center;
+    @include g.mq(tab) {
+        margin-top: 60px;
+        padding: 0 60px 0;
+        max-height: 268px;
+    }
+    @include g.mq(pc) {
+        padding: 0 100px 0;
+        max-height: 500px;
+    }
     > img {
+        width: 100%;
         object-fit: cover;
     }
     &--medium {
-        margin: 30px 54px 0;
-        min-width: 267px;
+        margin-top: 30px;
+        padding: 0 54px 0;
         max-height: 166px;
         display: flex;
         justify-content: center;
+        @include g.mq(tab) {
+            margin-top: 60px;
+            padding: 0 126px 0;
+            max-height: 358px;
+        }
+        @include g.mq(pc) {
+            padding: 0 486px 0;
+        }
         > img {
+            width: 100%;
             object-fit: cover;
         }
     }

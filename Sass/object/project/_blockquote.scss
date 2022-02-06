@@ -1,10 +1,16 @@
 @use "../../global/" as g;
 
 .p-blockquote {
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 30px 20px 0 20px;
     padding: 30px 16px 30px 20px;
+    @include g.mq(tab) {
+        margin: 60px 60px 0 60px;
+        padding: 50px 56px 60px 50px;
+    }
+    @include g.mq(pc) {
+        margin: 60px 100px 0 100px;
+        padding: 50px 60px 50px 50px;
+    }
     &__text {
         line-height: 1.43;
         max-height: 505px;
@@ -13,11 +19,13 @@
     }
     &__source {
         margin-top: 30px;
+        @include g.mq(tab) {
+            margin-top: 60px;
+        }
     }
     &__code {
         font-family: "M+ 1m";
         color: g.$font-color;
         line-height: 1.43;
-        padding: 50px 59px 50px 50px;
     }
 }
