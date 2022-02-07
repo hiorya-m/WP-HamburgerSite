@@ -1,50 +1,38 @@
-function sidebarHide() {
-    $('.is-sidebar').hide();
-    $('.is-fade').hide();
-}
+jQuery(function ($) {
 
-function pcSidebar() {
-    let $window = $(this).width();
-    
-    if($window > 1440) {
-        $('.is-sidebar').show()
+    function sidebarHide() {
+        $('.is-sidebar').hide();
+        $('.is-fade').hide();
     }
-}
 
-$(document).ready(function() {
-    // $('.is-sidebar').hide();
-    // $('.is-fade').hide();
-    sidebarHide();
-    
-    // let $window = $(this).width();
+    function pcSidebar() {
+        let $window = $(this).width();
 
-    // if($window > 1440) {
-    //     $('.is-sidebar').show()
-    // }
-    pcSidebar();
-});
+        if ($window > 1440) {
+            $('.is-sidebar').show()
+        }
+    }
 
-$(window).resize(function() {
-    // $('.is-sidebar').hide();
-    // $('.is-fade').hide();
-    sidebarHide();
+    $(document).ready(function () {
+        sidebarHide();
+        pcSidebar();
+    });
 
-    // let $window = $(this).width();
-
-    // if($window > 1440) {
-    //     $('.is-sidebar').show()
-    // }
-    pcSidebar();
-});
+    $(window).resize(function () {
+        sidebarHide();
+        pcSidebar();
+    });
 
 
 
-$('.is-open').on('click', function () {
-    $('.is-fade').show();
-    $('.is-sidebar').stop(true).animate({ 'width': 'toggle' });
-});
+    $('.is-open').on('click', function () {
+        $('.is-fade').show();
+        $('.is-sidebar').stop(true).animate({ 'width': 'toggle' });
+    });
 
-$('.is-close').on('click', function () {
-    $('.is-fade').hide();
-    $('.is-sidebar').stop(true).animate({ 'width': 'toggle' });
+    $('.is-close').on('click', function () {
+        $('.is-fade').hide();
+        $('.is-sidebar').stop(true).animate({ 'width': 'toggle' });
+    });
+
 });
