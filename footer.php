@@ -13,6 +13,7 @@
     </div>
     <!-- 黒フェード -->
     <div class="c-fade-layer is-fade"></div>
+    <?php wp_footer(); ?>
 </body>
 
 </html>

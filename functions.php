@@ -1,6 +1,6 @@
 <?php
 // テーマサポート
-add_theme_support( 'title-tag');
+add_theme_support( 'title-tag'); /*タイトルタグがheadに追加される*/
 
 // タイトル出力
 function hamburger_title($title) {

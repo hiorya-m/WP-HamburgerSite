@@ -1,45 +1,10 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburger</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css">
-    <link rel="stylesheet" href="./CSS/style.css">
-</head>
-
-<body>
-    <!-- グリッドレイアウト -->
-    <div class="l-container">
-        <!-- ヘッダー -->
-        <header class="l-header">
-            <div class="p-header">
-                <h1 class="c-title p-header__logo"><a href="/index.html">Hamburger</a></h1>
-                <!-- サーチフォーム -->
-                <div class="p-header__form">
-                    <form class="p-search-form" action="archive-search.html" method="get">
-                        <label class="p-search-form__keyword">
-                            <input class="c-keyword" type="search" name="search">
-                            <img class="c-icon" src="./img/common/header_icon_search.svg" alt="検索アイコン">
-                        </label>
-                        <button class="c-button p-search-form__button" type="submit" name="submit"
-                            value="検索">検索</button>
-                    </form>
-                </div>
-            </div>
-            <!-- サイドバー展開用 -->
-            <button class="p-sidebar-open c-title is-open">Menu</button>
-        </header>
-        <!-- メインメニュー -->
+<?php get_header(); ?>
+<!-- メインメニュー -->
         <main class=" l-main">
             <article class="p-articre">
                 <!-- ページトップ -->
                 <div class="p-archive-top">
-                    <img class="p-archive-top__image" src="./img/archive/pagetop.png">
+                    <img class="p-archive-top__image" src="<?php echo get_theme_file_uri();?>/img/archive/pagetop.png">
                     <div class="p-archive-top__heading">
                         <h2 class="p-archive-top__heading__title c-title">Search:</h2>
                         <p class="p-archive-top__heading__lead c-text__m">チーズバーガー</p>
@@ -166,67 +131,6 @@
             <!-- メインここまで -->
         </main>
         <!-- サイドバー -->
-        <aside class="l-sidebar p-sidebar is-sidebar">
-            <h2 class="p-sidebar__title c-title">Menu</h2>
-            <div class="c-close p-sidebar__button is-close">
-                <span class="c-close__right"></span>
-                <span class="c-close__left"></span>
-            </div>
-            <div class="p-sidebar__list c-text__m">
-                <div class="p-side-menu">
-                    <h3><a href="archive.html">バーガー</a></h3>
-                    <ul class="p-side-menu__list">
-                        <li><a href="single.html">ハンバーガー</a></li>
-                        <li><a href="single.html">チーズバーガー</a></li>
-                        <li><a href="single.html">テリヤキバーガー</a></li>
-                        <li><a href="single.html">アボカドバーガ</a></li>
-                        <li><a href="single.html">フィッシュバーガー</a></li>
-                        <li><a href="single.html">ベーコンバーガー</a></li>
-                        <li><a href="single.html">チキンバーガー</a></li>
-                    </ul>
-                </div>
-                <div class="p-side-menu">
-                    <h3><a href="archive.html">サイド</a></h3>
-                    <ul class="p-side-menu__list">
-                        <li><a href="single.html">ポテト</a></li>
-                        <li><a href="single.html">サラダ</a></li>
-                        <li><a href="single.html">ナゲット</a></li>
-                        <li><a href="single.html">コーン</a></li>
-                    </ul>
-                </div>
-                <div class="p-side-menu">
-                    <h3><a href="archive.html">ドリンク</a></h3>
-                    <ul class="p-side-menu__list">
-                        <li><a href="single.html">コーラ</a></li>
-                        <li><a href="single.html">ファンタ</a></li>
-                        <li><a href="single.html">オレンジ</a></li>
-                        <li><a href="single.html">アップル</a></li>
-                        <li><a href="single.html">紅茶(Ice/Hot)</a></li>
-                        <li><a href="single.html">コーヒー(Ice/Hot)</a></li>
-                    </ul>
-                </div>
-            </div>
-        </aside>
+        <?php get_sidebar(); ?>
         <!-- フッター -->
-        <footer class="l-footer">
-            <div class="p-footer">
-                <ul class="p-footer__list">
-                    <li class="p-footer__list__item">ショップ情報</li>
-                    <li class="p-footer__list__item">ヒストリー</li>
-                </ul>
-                <div class="c-copyright">
-                    <p>Copyright: RaisTech</p>
-                </div>
-            </div>
-        </footer>
-        <!-- グリッドここまで -->
-    </div>
-    <!-- 黒フェード -->
-    <div class="c-fade-layer is-fade"></div>
-    <!-- スクリプト読み込み -->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="./JS/script.js"></script>
-</body>
-
-</html>
+<?php get_footer(); ?>

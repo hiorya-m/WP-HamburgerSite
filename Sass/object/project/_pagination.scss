@@ -28,7 +28,7 @@
     > a {
       &::before {
         content: "";
-        background: url(../../../img/archive/pagination-previous.svg);
+        background: url(/wp-content/themes/hamburger-site/img/archive/pagination-previous.svg);
         display: inline-block;
         width: 18px;
         height: 17px;
@@ -41,7 +41,7 @@
     > a {
       &::after {
         content: "";
-        background: url(../../../img/archive/pagination-next.svg);
+        background: url(/wp-content/themes/hamburger-site/img/archive/pagination-next.svg);
         display: inline-block;
         width: 18px;
         height: 17px;

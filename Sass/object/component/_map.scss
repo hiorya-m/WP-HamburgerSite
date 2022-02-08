@@ -1,11 +1,11 @@
 @use "../../global/" as g;
 
 .c-map {
-  background: url(../../../img/index/map_bg01.png) no-repeat center bottom /
+  background: url(/wp-content/themes/hamburger-site/img/index/map_bg01.png) no-repeat center bottom /
     cover;
   position: relative;
   @include g.mq(tab) {
-    background: url(../../../img/index/map_bg01.png) no-repeat left center /
+    background: url(/wp-content/themes/hamburger-site/img/index/map_bg01.png) no-repeat left center /
       cover;
   }
   &::before {

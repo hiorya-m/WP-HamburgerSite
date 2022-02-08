@@ -14,7 +14,7 @@
         <!-- ヘッダー -->
         <header class="l-header">
             <div class="p-header">
-                <h1 class="c-title p-header__logo"><a href="<?php esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a></h1>
+                <h1 class="c-title p-header__logo"><a href="<?php echo esc_url( home_url('/') ); ?>"><?php bloginfo('name'); ?></a></h1>
                 <!-- サーチフォーム -->
                 <div class="p-header__form">
                     <?php get_search_form(); ?>
