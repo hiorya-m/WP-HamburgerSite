@@ -8,19 +8,25 @@
   @include g.mq(pc) {
     margin-top: 70px;
   }
-  &__list {
-    font-size: 20px;
-    font-weight: initial;
-    margin-top: 40px;
-    margin-left: 32px;
-    > li {
+  ul {
+    li {
       margin-bottom: 23px;
       @include g.mq(pc) {
         margin-bottom: 30px;
       }
-      > a {
-        display: inline;
+      ul {
+        font-size: 20px;
+        font-weight: initial;
+        margin-top: 40px;
+        margin-left: 32px;
+        margin-bottom: 40px;
       }
     }
   }
 }
+// &__list {
+//   font-size: 20px;
+//   font-weight: initial;
+//   margin-top: 40px;
+//   margin-left: 32px;
+// }

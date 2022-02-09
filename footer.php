@@ -1,9 +1,6 @@
 <footer class="l-footer">
             <div class="p-footer">
-                <ul class="p-footer__list">
-                    <li class="p-footer__list__item">ショップ情報</li>
-                    <li class="p-footer__list__item">ヒストリー</li>
-                </ul>
+                <?php wp_nav_menu(); ?>
                 <div class="c-copyright">
                     <p>Copyright: RaisTech</p>
                 </div>
