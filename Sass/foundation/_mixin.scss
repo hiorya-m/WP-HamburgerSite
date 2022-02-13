@@ -1,5 +1,3 @@
-@use "./variables";
-
 @mixin mq($point) {
     @if $point == tab {
         @media (min-width: 600px) {

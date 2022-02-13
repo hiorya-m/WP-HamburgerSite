@@ -1,4 +1,4 @@
-@use "../../global/" as g;
+@use "../../foundation" as g;
 
 .c-button {
   background: linear-gradient(to bottom, g.$button-color, #ded8d3);
