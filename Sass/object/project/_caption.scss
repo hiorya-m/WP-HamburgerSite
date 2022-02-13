@@ -15,7 +15,7 @@
             font-size: 36px;
         }
     }
-    &__title--small {
+    h3 {
         font-size: 16px;
         margin-top: 24px;
         @include g.mq(pc) {
@@ -23,11 +23,11 @@
             margin-top: 47px;
         }
     }
-    &__text {
+    p {
         margin-top: 10px;
         line-height: 1.45;
         @include g.mq(pc) {
-            margin-top: 17px;
+            margin-top: 50px;
         }
     }
 }

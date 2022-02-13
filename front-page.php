@@ -6,15 +6,16 @@
         <div class="p-page-top">
             <img class="p-page-top__image--ps" src="<?php echo get_theme_file_uri('/img/index/pagetop-sp.png'); ?>">
             <img class="p-page-top__image--tab" src="<?php echo get_theme_file_uri('/img/index/pagetop.png'); ?>">
-            <h2 class="p-page-top__title">ダミーサイト</h2>
+            <h2 class="p-page-top__title"><?php echo get_the_title(); ?></h2>
         </div>
         <!-- メニュー表示 -->
         <div class="p-home-product">
             <ul class="p-home-product__inner">
                 <li class="p-home-product__inner--item">
-                    <a href="page.html">
+                    <a href="<?php echo esc_url(home_url('/category/takeout')) ?>">
                         <div class="p-home-menu">
                             <h2 class="c-title p-home-menu__title">Take Out</h2>
+                            <!-- 最新の投稿を2件表示したい -->
                             <div class="p-home-menu__body">
                                 <dl class="p-home-description">
                                     <dt class="p-home-description__title">Take OUT</dt>
@@ -29,9 +30,10 @@
                     </a>
                 </li>
                 <li class="p-home-product__inner--item">
-                    <a href="page.html">
+                    <a href="<?php echo esc_url(home_url('/category/eatin')) ?>">
                         <div class="p-home-menu">
                             <h2 class="c-title p-home-menu__title">Eat In</h2>
+                            <!-- 最新の投稿を2件表示したい-->
                             <div class="p-home-menu__body">
                                 <dl class="p-home-description">
                                     <dt class="p-home-description__title">Eat In</dt>
@@ -49,6 +51,7 @@
         </div>
         <!-- アクセスマップ -->
         <section class="p-acsess c-map">
+            <!-- 投稿画面から編集できるようにしたい -->
             <div class="p-acsess__body">
                 <h2 class="p-acsess__body__title">見出しが入ります</h2>
                 <p class="p-acsess__body__text">

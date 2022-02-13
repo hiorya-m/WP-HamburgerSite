@@ -1,6 +1,6 @@
 <footer class="l-footer">
             <div class="p-footer">
-                <?php wp_nav_menu(); ?>
+                <?php wp_nav_menu(array('menu' => 'footer-menu')); ?>
                 <div class="c-copyright">
                     <p>Copyright: RaisTech</p>
                 </div>

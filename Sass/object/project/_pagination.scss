@@ -1,6 +1,6 @@
 @use "../../global/" as g;
 
-.p-pagination {
+.wp-pagenavi {
   color: g.$main-color;
   display: flex;
   justify-content: space-between;
@@ -8,60 +8,81 @@
   margin: 50px auto 30px;
   max-width: 334px;
   @include g.mq(tab) {
-    max-width: 600px;
+    justify-content: space-evenly;
+    max-width: 580px;
     margin: 106px auto 30px;
   }
   @include g.mq(pc) {
     max-width: 600px;
     margin: 150px auto 60px;
   }
-  > li {
+
+  .previouspostslink,
+  .nextpostslink {
+    border: none;
+    font-size: 32px;
+  }
+  .previouspostslink {
+    &::after {
+      content: '前へ';
+      font-size: 16px;
+      margin-left: 8px;
+      vertical-align: middle;
+      @include g.mq(tab) {
+        display: none;
+      }
+    }
+  }
+  .nextpostslink {
+    &::before {
+      content: '次へ';
+      font-size: 16px;
+      margin-right: 8px;
+      vertical-align: middle;
+      @include g.mq(tab) {
+        display: none;
+      }
+    }
+  }
+  
+  .pages {
+    display: none;
+    @include g.mq(tab) {
+      display: block;
+      border: none;
+    }
+    &::before {
+      @include g.mq(tab) {
+        content: "page";
+        font-size: 16px;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .page {
+    display: none;
+    @include g.mq(tab) {
+      display: block;
+    }
+  }
+
+  .current {
+    display: none;
+    @include g.mq(tab) {
+      display: block;
       padding: 10px 9px 9px 10px;
       border: 1px solid g.$main-color;
-      cursor: pointer;
-      &:hover {
-          background: g.$font-color;
-          color: #FFF;
-      }
-  }
-  &__previous {
-    > a {
-      &::before {
-        content: "";
-        background: url(/wp-content/themes/hamburger-site/img/archive/pagination-previous.svg);
-        display: inline-block;
-        width: 18px;
-        height: 17px;
-        margin-right: 8px;
-        vertical-align: middle;
-      }
+      background: g.$font-color;
+      color: #fff;
     }
   }
-  &__next {
-    > a {
-      &::after {
-        content: "";
-        background: url(/wp-content/themes/hamburger-site/img/archive/pagination-next.svg);
-        display: inline-block;
-        width: 18px;
-        height: 17px;
-        margin-left: 8px;
-        vertical-align: middle;
-      }
+  a {
+    padding: 10px 9px 9px 10px;
+    border: 1px solid g.$main-color;
+    &:hover {
+      background: g.$font-color;
+      color: #fff;
     }
-  }
-}
-
-.p-pagination {
-  &--sp {
-    @include g.mq(tab) {
-      display: none;
-    }
-  }
-  &--tab {
-      display: none;
-      @include g.mq(tab) {
-          display: block;
-      }
   }
 }
