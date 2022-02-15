@@ -3,52 +3,90 @@
 <main class=" l-main">
     <article class="p-articre">
         <!-- ページトップ -->
-        <div class="p-page-top">
-            <img class="p-page-top__image--ps" src="<?php echo get_theme_file_uri('/img/index/pagetop-sp.png'); ?>">
-            <img class="p-page-top__image--tab" src="<?php echo get_theme_file_uri('/img/index/pagetop.png'); ?>">
-            <h2 class="p-page-top__title">ダミーサイト</h2>
-        </div>
+        <?php if (get_header_image()) : ?>
+            <div class="p-page-top">
+                <img class="p-page-top__image" src="<?php header_image(); ?>">
+                <h2 class="p-page-top__title"><?php echo get_the_title(); ?></h2>
+            </div>
+        <?php endif; ?>
         <!-- メニュー表示 -->
         <div class="p-home-product">
             <ul class="p-home-product__inner">
                 <li class="p-home-product__inner--item">
-                    <a href="archive.php">
+                    <a href="<?php echo esc_url(home_url('/category/takeout')) ?>">
                         <div class="p-home-menu">
                             <h2 class="c-title p-home-menu__title">Take Out</h2>
+                            <!-- 最新の投稿を2件表示したい -->
                             <div class="p-home-menu__body">
-                                <dl class="p-home-description">
-                                    <dt class="p-home-description__title">Take OUT</dt>
-                                    <dd class="p-home-description__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
-                                </dl>
-                                <dl class="p-home-description">
-                                    <dt class="p-home-description__title">Take OUT</dt>
-                                    <dd class="p-home-description__text">当店のテイクアウトで利用できる商品を掲載しています</dd>
-                                </dl>
+                                <?php
+                                $information = get_posts(array(
+                                    //ここで取得条件を指定する
+                                    'posts_per_page' => 2,
+                                    'category' => 14
+                                ));
+                                if ($information) :
+                                ?>
+                                    <?php
+                                    foreach ($information as $post) : //ループ開始
+                                        setup_postdata($post); //記事取得
+                                    ?>
+                                        <dl class="p-home-description">
+                                            <a href="<?php the_permalink(); ?>">
+                                                <dt class="p-home-description__title"><?php the_title(); ?></dt>
+                                                <dd class="p-home-description__text"><?php the_excerpt(); ?></dd>
+                                            </a>
+                                        </dl>
+                                    <?php
+                                    endforeach;
+                                    wp_reset_postdata();
+                                    ?>
+                                <?php else : ?>
+                                    <p>表示できる情報はありません。</p>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </a>
                 </li>
                 <li class="p-home-product__inner--item">
-                    <a href="archive.php">
-                        <div class="p-home-menu">
+                    <div class="p-home-menu">
+                            <a href="<?php echo esc_url(home_url('/category/eatin')) ?>">
                             <h2 class="c-title p-home-menu__title">Eat In</h2>
+                            <!-- 最新の投稿を2件表示したい-->
                             <div class="p-home-menu__body">
-                                <dl class="p-home-description">
-                                    <dt class="p-home-description__title">Eat In</dt>
-                                    <dd class="p-home-description__text">当店のイートインで利用できる商品を掲載しています</dd>
-                                </dl>
-                                <dl class="p-home-description">
-                                    <dt class="p-home-description__title">Eat In</dt>
-                                    <dd class="p-home-description__text">当店のイートインで利用できる商品を掲載しています</dd>
-                                </dl>
+                                <?php
+                                $information = get_posts(array(
+                                    //ここで取得条件を指定する
+                                    'posts_per_page' => 2,
+                                    'category' => 15
+                                ));
+                                if ($information) :
+                                ?>
+                                    <?php
+                                    foreach ($information as $post) :
+                                        setup_postdata($post);
+                                    ?>
+                                        <dl class="p-home-description">
+                                            <a href="<?php the_permalink(); ?>">
+                                                <dt class="p-home-description__title"><?php the_title(); ?></dt>
+                                                <dd class="p-home-description__text"><?php the_excerpt(); ?></dd>
+                                            </a>
+                                        </dl>
+                                    <?php
+                                    endforeach;
+                                    wp_reset_postdata();
+                                    ?>
+                                <?php else : ?>
+                                    <p>表示できる情報はありません。</p>
+                                <?php endif; ?>
                             </div>
+                        </a>
                         </div>
-                    </a>
                 </li>
             </ul>
         </div>
         <!-- アクセスマップ -->
         <section class="p-acsess c-map">
+            <!-- 投稿画面から編集できるようにしたい -->
             <div class="p-acsess__body">
                 <h2 class="p-acsess__body__title">見出しが入ります</h2>
                 <p class="p-acsess__body__text">
