@@ -1,28 +1,36 @@
 @use "../../foundation" as g;
 
-.p-flex-image {
-    margin-top: 30px;
-    padding: 0 20px 0;
-    gap: 20px 0;
-    @include g.mq(tab) {
-        margin-top: 241px;
-        padding: 0 60px 0;
-        gap: 20px 16px;
+.wp-block-gallery {
+  margin-top: 30px;
+  padding: 0 20px 0;
+  gap: 20px 0;
+  @include g.mq(tab) {
+    margin-top: 120px;
+    padding: 0 60px 0;
+    gap: 20px 16px;
+  }
+  @include g.mq(pc) {
+    margin-top: 60px;
+    gap: 20px 20px;
+    padding: 0 100px 0;
+  }
+}
+
+.single {
+    .wp-block-gallery.has-nested-images.is-cropped {
+        figure.wp-block-image {
+            &:not(#individual-image) {
+                width: 100%;
+                margin: 0;
+                max-height: 100%;
+                object-fit: cover;
+                @include g.mq(tab) {
+                  width: calc(100% / 2 - 16px);
+                }
+                @include g.mq(pc) {
+                  width: calc(100% / 3 - 20px);
+                }
+            }
     }
-    @include g.mq(pc) {
-        margin-top: 60px;
-        gap: 20px 20px;
-        padding: 0 100px 0;
-    }
-    > img {
-        max-height: 205px;
-        object-fit: cover;
-        @include g.mq(tab) {
-            width: calc(100% / 2 - 16px);
-        }
-        @include g.mq(pc) {
-            width: calc(100% / 3 - 20px);
-            max-height: 257px;
-        }
-    }
+  }
 }

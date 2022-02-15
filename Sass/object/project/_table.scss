@@ -1,14 +1,14 @@
 @use "../../foundation" as g;
 
-.p-table {
-    margin: 30px 20px 0;
+.wp-block-table {
+    margin: 30px 20px 30px;
     @include g.mq(tab) {
-        margin: 60px 60px 0;
+        margin: 60px 60px 60px;
     }
     @include g.mq(pc) {
-        margin: 50px 100px 0;
+        margin: 50px 100px 50px;
     }
-    &__tr {
+    tr {
         height: 77px;
         text-align: center;
         td {

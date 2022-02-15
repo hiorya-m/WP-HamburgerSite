@@ -1,32 +1,41 @@
 @use "../../foundation" as g;
 
-.p-single-list {
-    color: g.$font-color;
-    line-height: 1.43;
-    margin-top: 30px;
-    padding: 0 20px 0;
-    @include g.mq(tab) {
-        padding: 0 110px 0;
-    }
-    @include g.mq(pc) {
-        padding: 0 150px 0;
-    }
-    > ol {
-        padding-left: 28px;
-        &:not(:first-child) {
-            margin-top: 20px;
+%listbase {
+  font-family: "M+ 1m";
+  color: g.$font-color;
+  line-height: 1.43;
+  margin-top: 30px;
+  padding: 0 50px 0;
+  @include g.mq(tab) {
+    padding: 0 90px 0;
+  }
+  @include g.mq(pc) {
+    padding: 0 130px 0;
+  }
+}
+
+.single {
+  main {
+    article {
+      > ul {
+        @extend %listbase;
+        list-style: disc;
+        > li {
+          > ul {
+            list-style: circle;
+            margin-left: 36px;
+          }
         }
-    }
-    > ul {
-        &:not(:first-child) {
-            margin-top: 20px;
+      }
+      > ol {
+        @extend %listbase;
+        list-style: decimal;
+        > li {
+            > ol {
+                margin-left: 36px;
+            }
         }
+      }
     }
-    &__right {
-        margin-left: 24px
-    }
-    &--second {
-        @extend .p-single-list;
-        margin-top: 60px;
-    }
+  }
 }

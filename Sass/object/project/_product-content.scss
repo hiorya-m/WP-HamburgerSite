@@ -1,9 +1,11 @@
 @use "../../foundation" as g;
 
-.p-product-content {
+.wp-block-columns {
   margin-top: 30px;
   padding: 0 20px 0;
   display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 0;
   @include g.mq(tab) {
     margin-top: 60px;
     padding: 0 60px 0;
@@ -12,49 +14,30 @@
     margin-top: 60px;
     padding: 0 100px 0;
   }
-  > img {
-    max-height: 89px;
-    margin-right: 10px;
-    border: solid 1px g.$main-color;
-    object-fit: cover;
-    @include g.mq(tab) {
-      max-height: 189px;
-      margin-right: 21px;
-    }
-    @include g.mq(pc) {
-      max-height: 358px;
-      margin-right: 40px;
-    }
-  }
-  &__text {
-    line-height: 1.43;
-    max-height: 180px;
-    overflow: hidden;
-    font-family: "M+ 1m";
-    @include g.mq(tab) {
-      max-height: 370px;
-    }
-    @include g.mq(pc) {
-      max-height: none;
-    }
-  }
-  &--reverse {
-    @extend .p-product-content;
-    flex-direction: row-reverse;
-    @include g.mq(tab) {
-      margin-top: 117px;
-    }
-    @include g.mq(pc) {
-      margin-top: 60px;
-    }
-    > img {
-      margin-left: 9px;
-      margin-right: 0;
+  > div {
+    img {
+      max-height: 89px;
+      border: solid 1px g.$main-color;
+      object-fit: cover;
       @include g.mq(tab) {
-        margin-left: 21px;
+        max-height: 189px;
       }
       @include g.mq(pc) {
-        margin-left: 40px;
+        max-height: 358px;
+      }
+    }
+  }
+  > div {
+    p {
+      line-height: 1.43;
+      max-height: 180px;
+      overflow: hidden;
+      font-family: "M+ 1m";
+      @include g.mq(tab) {
+        max-height: 370px;
+      }
+      @include g.mq(pc) {
+        max-height: none;
       }
     }
   }

@@ -1,8 +1,7 @@
 @use "../../foundation" as g;
 
-.c-table {
+.wp-block-table {
   border-collapse: collapse;
-  border: 1px solid g.$main-color;
   & * {
     border: 1px solid g.$main-color;
   }

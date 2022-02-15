@@ -22,11 +22,11 @@ add_action('after_setup_theme', 'custom_theme_support');
 // CSSとスクリプト読み込み
 function hamburger_script()
 {
-    wp_enqueue_style('style', get_theme_file_uri('/CSS/style.css'), false);
-    wp_enqueue_style('mplus1m', 'http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css');
-    wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+    wp_enqueue_style('mplus1m', 'http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css',array(),'');
+    wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap',array(),'');
+    wp_enqueue_style('style', get_theme_file_uri('/CSS/style.css'), array(),date("YmdHi"));//dateで再キャッシュ用（バージョン情報を後で記述）
 
-    wp_enqueue_script('script', get_theme_file_uri('/JS/script.js'), array(), false, true);
+    wp_enqueue_script('script', get_theme_file_uri('/JS/script.js'), array(),date("YmdHi"), true);//dateで再キャッシュ用（バージョン情報を後で記述）
 }
 add_action('wp_enqueue_scripts', 'hamburger_script');
 
