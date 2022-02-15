@@ -1135,7 +1135,12 @@ a {
 @media (min-width: 600px) {
   .p-card > img {
     width: 50%;
-    height: auto;
+    height: 375px;
+  }
+}
+@media (min-width: 1440px) {
+  .p-card > img {
+    height: 471px;
   }
 }
 .p-card__caption {
@@ -1144,7 +1149,12 @@ a {
 @media (min-width: 600px) {
   .p-card__caption {
     width: 50%;
-    height: auto;
+    height: 375px;
+  }
+}
+@media (min-width: 1440px) {
+  .p-card__caption {
+    height: 471px;
   }
 }
 .p-card__caption__button {
@@ -1207,6 +1217,14 @@ a {
     display: none;
   }
 }
+.wp-pagenavi .nextpostslink {
+  margin-left: auto;
+}
+@media (min-width: 600px) {
+  .wp-pagenavi .nextpostslink {
+    margin: 0;
+  }
+}
 .wp-pagenavi .nextpostslink::before {
   content: "次へ";
   font-size: 16px;
@@ -1258,7 +1276,7 @@ a {
   padding: 10px 9px 9px 10px;
   border: 1px solid #707070;
 }
-.wp-pagenavi a:hover {
+.wp-pagenavi a:not(.previouspostslink):not(.nextpostslink):hover {
   background: #3C2A10;
   color: #fff;
 }

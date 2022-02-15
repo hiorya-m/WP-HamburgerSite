@@ -34,6 +34,10 @@
     }
   }
   .nextpostslink {
+    margin-left: auto;
+    @include g.mq(tab) {
+      margin: 0;
+    }
     &::before {
       content: '次へ';
       font-size: 16px;
@@ -80,7 +84,7 @@
   a {
     padding: 10px 9px 9px 10px;
     border: 1px solid g.$main-color;
-    &:hover {
+    &:not(.previouspostslink):not(.nextpostslink):hover {
       background: g.$font-color;
       color: #fff;
     }

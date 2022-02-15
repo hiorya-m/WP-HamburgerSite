@@ -12,14 +12,20 @@
         height: 230px;
         @include g.mq(tab) {
             width: 50%;
-            height: auto;
+            height: 375px;
+        }
+        @include g.mq(pc) {
+            height: 471px;
         }
     }
     &__caption {
         background-color: #3C2B1C;
         @include g.mq(tab) {
             width: 50%;
-            height: auto;
+            height: 375px;
+        }
+        @include g.mq(pc) {
+            height: 471px;
         }
         &__button {
             width: 163px;
