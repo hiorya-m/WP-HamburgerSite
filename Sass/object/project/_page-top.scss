@@ -12,23 +12,6 @@
     height: 100%;
     object-fit: cover;
   }
-  &__image--ps {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    @include g.mq(tab) {
-      display: none;
-    }
-  }
-  &__image--tab {
-    display: none;
-    @include g.mq(tab) {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
   &__title {
     position: absolute;
     top: calc(50% - 18px);

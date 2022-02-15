@@ -3,11 +3,12 @@
 <main class=" l-main">
     <article class="p-articre">
         <!-- ページトップ -->
+        <?php if(get_header_image()): ?>
         <div class="p-page-top">
-            <img class="p-page-top__image--ps" src="<?php echo get_theme_file_uri('/img/index/pagetop-sp.png'); ?>">
-            <img class="p-page-top__image--tab" src="<?php echo get_theme_file_uri('/img/index/pagetop.png'); ?>">
+            <img class="p-page-top__image" src="<?php header_image(); ?>">
             <h2 class="p-page-top__title"><?php echo get_the_title(); ?></h2>
         </div>
+        <?php endif; ?>
         <!-- メニュー表示 -->
         <div class="p-home-product">
             <ul class="p-home-product__inner">

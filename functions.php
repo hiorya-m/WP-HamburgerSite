@@ -12,6 +12,7 @@ function custom_theme_support()
     add_theme_support('post-thumbnails');
     add_theme_support('title-tag');
     add_theme_support('menus');
+    add_theme_support('custom-header');
     register_nav_menus(array(
         'footer_nav' => esc_html__('footer navigation', 'rtbread'),
         'category_nav' => esc_html__('category navigation', 'rtbread'),
