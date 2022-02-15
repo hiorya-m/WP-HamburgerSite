@@ -730,6 +730,13 @@ a {
     margin-top: 47px;
   }
 }
+.p-home-menu a {
+  transition: all 0.3s;
+}
+.p-home-menu a:hover {
+  opacity: 0.8;
+  transform: translateY(-5px);
+}
 
 .p-home-description {
   background-color: rgba(255, 255, 255, 0.8);
@@ -766,6 +773,17 @@ a {
 }
 @media (min-width: 1440px) {
   .p-home-description__text {
+    margin-top: 32px;
+  }
+}
+.p-home-description h2, .p-home-description h3, .p-home-description h4, .p-home-description h5, .p-home-description h6 {
+  font-size: 16px;
+  margin-top: 23px;
+  line-height: 1.4;
+  font-weight: inherit;
+}
+@media (min-width: 1440px) {
+  .p-home-description h2, .p-home-description h3, .p-home-description h4, .p-home-description h5, .p-home-description h6 {
     margin-top: 32px;
   }
 }
@@ -1039,7 +1057,7 @@ a {
 }
 
 .p-caption {
-  color: #FFF;
+  color: #fff;
   padding: 32px 73px 40px 17px;
 }
 @media (min-width: 600px) {

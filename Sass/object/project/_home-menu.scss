@@ -35,4 +35,11 @@
       }
     }
   }
+  a {
+    transition: all .3s;
+    &:hover {
+      opacity: .8;
+      transform: translateY(-5px);
+    }
+  }
 }

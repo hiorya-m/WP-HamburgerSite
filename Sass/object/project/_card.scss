@@ -23,6 +23,7 @@
         @include g.mq(tab) {
             width: 50%;
             height: 375px;
+            // margin-left: auto;
         }
         @include g.mq(pc) {
             height: 471px;
