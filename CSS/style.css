@@ -1359,6 +1359,15 @@ a {
   }
 }
 
+article:last-of-type {
+  margin-bottom: 31px;
+}
+@media (min-width: 600px) {
+  article:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
 .wp-block-quote {
   margin: 30px 20px 0 20px;
   padding: 30px 16px 30px 20px;

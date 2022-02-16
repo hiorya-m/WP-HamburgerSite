@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- メインメニュー -->
 <main class=" l-main">
-    <article class="p-articre">
+
         <!-- ページトップ -->
         <?php if (get_header_image()) : ?>
             <div class="p-page-top">
@@ -97,7 +97,7 @@
                 </p>
             </div>
         </section>
-    </article>
+
     <!-- メインここまで -->
 </main>
 <!-- サイドバー -->

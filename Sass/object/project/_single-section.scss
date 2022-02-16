@@ -72,3 +72,12 @@
     }
   }
 }
+
+article {
+  &:last-of-type {
+    margin-bottom: 31px;
+    @include g.mq(tab) {
+      margin-bottom: 0;
+    }
+  }
+}
