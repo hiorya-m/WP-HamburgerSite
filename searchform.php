@@ -1,4 +1,4 @@
-<form class="p-search-form" action="<?php echo home_url('/') ?>" method="get">
+<form class="p-search-form" action="<?php echo esc_url(home_url('/')); ?>" method="get">
     <label class="p-search-form__keyword">
         <input class="c-keyword" type="search" name="s" id="s" value="<?php the_search_query(); ?>">
         <img class="c-icon" src="<?php echo get_theme_file_uri();?>/img/common/header_icon_search.svg" alt="検索アイコン">

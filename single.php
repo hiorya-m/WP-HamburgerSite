@@ -12,6 +12,7 @@
                 <?php endif; ?>
                 <?php the_content(); ?>
             </article>
+            <?php wp_link_pages(); ?>
             <?php endwhile; endif; ?>
             <!-- メインここまで -->
         </main>

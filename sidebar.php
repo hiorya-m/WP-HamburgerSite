@@ -6,7 +6,7 @@
     </div>
     <div class="p-sidebar__list c-text__m">
         <div class="p-side-menu">
-            <?php wp_nav_menu(array('menu' => 'categorymenu')); ?>
+            <?php wp_nav_menu(array('theme_location' => 'category_nav')); ?>
         </div>
     </div>
 </aside>
